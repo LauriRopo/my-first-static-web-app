@@ -2,16 +2,103 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUONTO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('iso.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer-img {
+            width: 100%;
+            position: fixed;
+            height: 150px;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 1;
+        }
+
+        .dropdown-menu {
+            background-color: #1a4210;
+            min-width: 200px;
+        }
+
+        .dropdown-menu .dropdown-item {
+            color: #fff;
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #135905;
+
+        }
+
+        .green-box {
+            background-color: #1a4210;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: #fff;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+    <div class="container text-center">
+        <div class="green-box">
+            <h1 style="font-size: 400%;">Tervetuloa luontoon</h1>
+            <p style="font-size: larger;">Tervetuloa seikkailuun luonnon ihmeelliseen maailmaan!</p>
+        </div>
+        <p style="font-weight: bold;" style="font-size: larger;">Kuvittelepa, että astut ulos kotoasi ja edessäsi aukeaa
+            laaja,
+            vihreä metsä täynnä salaisuuksia ja seikkailuja.
+            Täällä metsässä asuu monenlaisia eläimiä, kuten kettuja, oravia ja peuroja,
+            jotka kulkevat hiljaa polkujen läpi ja piiloutuvat puiden taakse.
+            Voit nähdä lintuja lentämässä korkealla taivaalla ja kasteen tiputtavan hiljalleen vihreiden lehtien päälle.
+            Luonto on täynnä kauneutta ja yllätyksiä!</p>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Valitse aihe
+            </button>
+            <div>Yhteistiedot
+                Amazink@webSivu.fi
+                puh 040 948 581 1
+                Luontotie 52 A 14
+                <p style="font-weight: bold;">Clikkaa aurinkoa!</p>
+            </div>
+            <a href="https://www.youtube.com/watch?v=U81Y9CBO4gI">
+                <img src="linkki.webp" alt="Image" style="width: 100%; max-width: 400px;">
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="page2.html">Metsän salaisuudet</a></li>
+                <li><a class="dropdown-item" href="page3.html">Merenelämä</a></li>
+                <li><a class="dropdown-item" href="page4.html">Taivaan lintuja</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <img src="nimetön.png" alt="Footer Image" class="footer-img">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
